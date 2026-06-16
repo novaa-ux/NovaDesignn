@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOVA | Enterprise Digital Platform</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- حاوية الإشعارات (Toasts) -->
+    <div id="toastContainer" class="toast-container"></div>
+
+    <!-- شريط التنقل المتقدم -->
+    <header class="navbar-complex">
+        <div class="logo">NOVA<span>.</span></div>
+        <nav class="mega-nav">
+            <ul class="main-menu">
+                <li><a href="#hero" class="active">المنصة</a></li>
+                <li class="has-dropdown">
+                    <a href="#services">الحلول التقنية <i class="fas fa-chevron-down"></i></a>
+                    <div class="mega-menu">
+                        <div class="mega-column">
+                            <h4>التصميم (UI/UX)</h4>
+                            <ul>
+                                <li><a href="#">واجهات الويب</a></li>
+                                <li><a href="#">تطبيقات الموبايل</a></li>
+                                <li><a href="#">لوحات التحكم (Dashboards)</a></li>
+                            </ul>
+                        </div>
+                        <div class="mega-column">
+                            <h4>الهوية البصرية</h4>
+                            <ul>
+                                <li><a href="#">تصميم الشعارات</a></li>
+                                <li><a href="#">أدلة العلامة التجارية</a></li>
+                                <li><a href="#">تصاميم السوشيال ميديا</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="#portfolio">الأعمال</a></li>
+                <li><a href="#calculator">حاسبة المشاريع</a></li>
+            </ul>
+        </nav>
+        <div class="auth-group">
+            <button class="btn-ghost"><i class="fas fa-terminal"></i> بوابة العملاء</button>
+            <button class="btn-glow" onclick="showToast('تم فتح السلة', 'info')"><i class="fas fa-shopping-cart"></i></button>
+        </div>
+    </header>
+
+    <!-- الواجهة الرئيسية -->
+    <section id="hero" class="hero-complex">
+        <div class="grid-bg"></div> <!-- خلفية شبكية معقدة -->
+        <div class="hero-content">
+            <div class="badge-pill">منصة الجيل الرابع للتصميم 🚀</div>
+            <h1 class="glitch-title" data-text="نصنع المستقبل.">نصنع المستقبل.</h1>
+            <p>ليست مجرد وكالة، NOVA هي بنية تحتية متكاملة لرقمنة علامتك التجارية وتحويلها إلى تجربة بصرية لا تُقهر.</p>
+            <div class="hero-actions">
+                <a href="#calculator" class="btn-primary">ابدأ بناء مشروعك</a>
+                <a href="#portfolio" class="btn-secondary"><i class="fas fa-play"></i> استكشف الأنظمة</a>
+            </div>
+            
+            <!-- إحصائيات معقدة -->
+            <div class="stats-row">
+                <div class="stat-box"><h3>+150</h3><p>نظام تم إطلاقه</p></div>
+                <div class="stat-box"><h3>99.9%</h3><p>دقة التنفيذ</p></div>
+                <div class="stat-box"><h3>24/7</h3><p>دعم فني مخصص</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- معرض الأعمال (بفلترة ديناميكية) -->
+    <section id="portfolio" class="portfolio-section">
+        <div class="section-heading">
+            <h2>مكتبة الأنظمة والأعمال</h2>
+            <p>تصفح أحدث مشاريعنا التقنية والبصرية</p>
+        </div>
+        
+        <div class="filter-controls">
+            <button class="filter-btn active" data-filter="all">الكل</button>
+            <button class="filter-btn" data-filter="uiux">واجهات المستخدم (UI/UX)</button>
+            <button class="filter-btn" data-filter="branding">الهويات البصرية</button>
+        </div>
+
+        <div class="portfolio-grid">
+            <div class="portfolio-item glass-card" data-category="uiux">
+                <!-- الكود الجديد للمشروع الواحد في معرض الأعمال -->
+<div class="portfolio-item glass-card" data-category="uiux">
+    
+    <!-- هنا التعديل: لينك جواه صورة -->
+    <a href="https://nvnwear.github.io/nvn./" target="_blank" class="img-link">
+        <!-- استبدل image.jpg باسم الصورة بتاعتك -->
+        <img src="images/photo1.jpg.jpg" alt="NVN" class="real-project-img">
+    </a>
+
+    <div class="item-info">
+        <span class="tag">UI/UX</span>
+        <h3>clothing brand</h3>
+    </div>
+</div>
+                <div class="item-info">
+                    <span class="tag">UI/UX</span>
+                    <h3></h3>clothing brand</h3>
+                </div>
+            </div>
+            <div class="portfolio-item glass-card" data-category="uiux">
+    <a href="https://novaa-ux.github.io/NOVAdesign/" target="_blank" class="img-link">
+        <img src="images/photo2.jpg.jpg" alt="NOVAdesign" class="real-project-img">
+    </a>
+    <div class="item-info">
+        <span class="tag">UI/UX</span>
+        <h3>NOVA TST</h3>
+    </div>
+</div>
+            
+        </div>
+    </section>
+
+    <!-- حاسبة المشاريع المعقدة -->
+    <section id="calculator" class="calculator-section">
+        <div class="section-heading">
+            <h2>حاسبة التكلفة الذكية</h2>
+            <p>اختر مواصفات مشروعك للحصول على تقدير فوري</p>
+        </div>
+        
+        <div class="calculator-container glass-panel">
+            <div class="calc-form">
+                <div class="form-group">
+                    <label>نوع المشروع</label>
+                    <select id="projectType" class="calc-input">
+                        <option value="500">تصميم هوية بصرية أساسية (500 EGP)</option>
+                        <option value="2500">هوية وتصميم موقع كامل (2500 EGP)</option>
+                        <option value="5000">منصة رقمية ضخمة (5000 EGP)</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label>الميزات الإضافية (يمكن اختيار أكثر من واحدة)</label>
+                    <div class="checkbox-group">
+                        <label class="custom-checkbox">
+                            <input type="checkbox" class="feature-calc" value="1000">
+                            <span class="checkmark"></span>
+                            لوحة تحكم للمسؤولين (+1000 EGP)
+                        </label>
+                        <label class="custom-checkbox">
+                            <input type="checkbox" class="feature-calc" value="800">
+                            <span class="checkmark"></span>
+                            تصميم 3D مخصص (+800 EGP)
+                        </label>
+                        <label class="custom-checkbox">
+                            <input type="checkbox" class="feature-calc" value="500">
+                            <span class="checkmark"></span>
+                            دعم الوضع الليلي (+500 EGP)
+                        </label>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="calc-result">
+                <h3>التكلفة التقديرية</h3>
+                <div class="price-display"><span id="livePrice">500</span> <small>EGP</small></div>
+                <ul class="included-list">
+                    <li><i class="fas fa-check-circle"></i> ملفات المصدر (Source Files)</li>
+                    <li><i class="fas fa-check-circle"></i> دعم فني لمدة شهر</li>
+                </ul>
+                <button class="btn-primary w-100" onclick="submitProject()">تأكيد وبدء المشروع</button>
+            </div>
+        </div>
+    </section>
+    <div class="portfolio-grid">
+    
+
+        </div>
+    </div>
+
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
